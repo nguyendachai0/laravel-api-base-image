@@ -19,5 +19,5 @@ phases:
     on-failure: ABORT
     commands:
       - docker images ls -a
-      - docker push $REPOSITORY/$IMAGE:$IMAGE_TAGE  
+      - docker push $REPOSITORY/$IMAGE:$IMAGE_TAG 
     
