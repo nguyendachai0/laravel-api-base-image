@@ -14,7 +14,7 @@ phases:
     on-failure: ABORT
     commands:
       - docker build -t $IMAGE .
-      - docker tag $IMAGE:$IMAGE_TAGE $REPOSITORY/$IMAGE:$IMAGE_TAG 
+      - docker tag $IMAGE:$IMAGE_TAG $REPOSITORY/$IMAGE:$IMAGE_TAG 
   post_build:
     on-failure: ABORT
     commands:
